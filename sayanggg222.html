@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rahma | My Love</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{
+      font-family:'Poppins',sans-serif;
+      background:linear-gradient(135deg,#ffeef8,#fff0f8);
+      color:#d81b60;
+      overflow-x:hidden;
+    }
+    .container{max-width:1100px;margin:auto;padding:0 20px;}
+
+    /* NAVBAR */
+    .navbar{
+      position:fixed;top:0;width:100%;
+      background:rgba(255,255,255,.95);backdrop-filter:blur(10px);
+      padding:1rem 0;z-index:1000;
+      box-shadow:0 2px 15px rgba(216,27,96,.1);
+    }
+    .navbar .container{display:flex;justify-content:space-between;align-items:center;}
+    .logo{
+      font-family:'Dancing Script',cursive;
+      font-size:2.2rem;color:#d81b60;font-weight:700;
+    }
+    .logo span{color:#ff4081;animation:pulse 1.5s infinite;}
+    @keyframes pulse{0%,100%{transform:scale(1);}50%{transform:scale(1.3);}}
+
+    .nav-menu{display:flex;list-style:none;gap:2rem;}
+    .nav-menu a{
+      text-decoration:none;color:#d81b60;position:relative;
+    }
+    .nav-menu a:hover{color:#ff1744;}
+
+    /* HERO */
+    .hero{
+      min-height:100vh;display:flex;align-items:center;
+      padding-top:80px;text-align:center;
+    }
+    .wave-text{
+      font-family:'Dancing Script',cursive;
+      font-size:5rem;display:flex;justify-content:center;gap:10px;
+    }
+    .wave-text span{display:inline-block;color:#ff4081;}
+
+    .subtitle{font-size:1.4rem;margin:1.2rem 0;color:#ec407a;}
+    .heart-beat{font-size:3rem;color:#ff1744;animation:pulse 1.5s infinite;}
+
+    /* GALLERY */
+    .gallery{padding:5rem 0;background:white;}
+    .section-title{
+      text-align:center;font-size:2.5rem;color:#d81b60;
+      font-family:'Dancing Script',cursive;margin-bottom:3rem;
+    }
+    .gallery-grid{
+      display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:1.5rem;
+    }
+    .gallery-item{
+      border-radius:20px;overflow:hidden;
+      box-shadow:0 10px 30px rgba(216,27,96,.2);
+      transition:.4s;
+    }
+    .gallery-item:hover{transform:translateY(-10px);}
+    .gallery-item img{width:100%;height:100%;object-fit:cover;}
+
+    /* PESAN */
+    .message{padding:5rem 0;}
+    .love-letter{
+      max-width:700px;margin:auto;background:white;
+      padding:3rem;border-radius:25px;
+      box-shadow:0 15px 40px rgba(216,27,96,.15);
+      border:3px solid #ffc0cb;text-align:center;
+    }
+    .love-letter h2{
+      font-family:'Dancing Script',cursive;
+      font-size:2.8rem;color:#d81b60;margin-bottom:1.5rem;
+    }
+    .love-letter p{font-size:1.2rem;color:#ec407a;}
+
+    .heart-pulse{font-size:3rem;color:#ff1744;margin-top:1.5rem;animation:pulse 1.5s infinite;}
+
+    /* FOOTER */
+    .footer{
+      background:#d81b60;color:white;text-align:center;padding:2rem 0;
+    }
+
+    @media(max-width:768px){
+      .wave-text{font-size:3.5rem;}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">Rahma<span>♥</span></div>
+      <ul class="nav-menu">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#galeri">Galeri</a></li>
+        <li><a href="#pesan">Pesan</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="container hero-content">
+      <h1 class="wave-text">
+        <span>R</span><span>A</span><span>H</span><span>M</span><span>A</span>
+      </h1>
+      <p class="subtitle">Cinta yang selalu mekar seperti bunga sakura</p>
+      <div class="heart-beat">♥</div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="galeri" class="gallery">
+    <div class="container">
+      <h2 class="section-title">Momen Kita</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="rahma1.jpg" alt="Rahma 1">
+        </div>
+        <div class="gallery-item">
+          <img src="rahma2.jpg" alt="Rahma 2">
+        </div>
+        <div class="gallery-item">
+          <img src="rahma3.jpg" alt="Rahma 3">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PESAN -->
+  <section id="pesan" class="message">
+    <div class="container">
+      <div class="love-letter">
+        <h2>Untuk Rahma,</h2>
+        <p>“Kita gak selalu sempurna, tapi aku selalu mau memperjuangkan kita. Kamu adalah bagian paling indah dalam hari-hariku.”</p>
+        <p class="signature">— Dari Ihsan buat Kanjeng Ratu</p>
+        <div class="heart-pulse">♥</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2025 Dibuat dengan ♥ untuk Rahma</p>
+  </footer>
+
+</body>
+</html>
